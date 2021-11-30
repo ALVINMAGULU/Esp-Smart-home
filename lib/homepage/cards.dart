@@ -9,6 +9,17 @@ Widget card1 = Card(
           style: TextStyle(
             fontSize: 20,
           ),
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            IconButton(onPressed: () {}, icon: Icon(Icons.lightbulb_outline)),
+            IconButton(onPressed: () {}, icon: Icon(Icons.video_call)),
+            Text(
+              "23C",
+              style: TextStyle(fontSize: 20),
+            )
+          ],
         )
       ],
     ),
