@@ -4,6 +4,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:smart_home/homepage/homepage.dart';
+import 'package:smart_home/add/room_add.dart';
 
 Messagedialog(String message, BuildContext context) {
   return showDialog<String>(
@@ -69,7 +70,12 @@ addDialog(BuildContext context) {
           title: const Text('Select'),
           children: <Widget>[
             SimpleDialogOption(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => roomadd()),
+                );
+              },
               child: const Text('Room'),
             ),
             SimpleDialogOption(

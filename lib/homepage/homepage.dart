@@ -27,12 +27,7 @@ class _homepageState extends State<homepage> {
               child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          IconButton(onPressed: () {}, icon: Icon(Icons.home)),
-                          Text("home")
-                        ]),
+                  
                     Column(children: [
                       IconButton(
                           onPressed: () {
